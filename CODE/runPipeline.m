@@ -18,20 +18,20 @@
 %% Load trained models 
 % fprintf('%s\n', 'Loading trained models ...')
 % 
-detector = load('/Users/eleanort/Library/CloudStorage/OneDrive-NanyangTechnologicalUniversity/PhD/UAV damage detection/GitHub/UAVdamageAssessment/FINAL_MODELS/DETECTOR_FINAL0751.mat');
+detector = load('/UAVdamageAssessment/FINAL_MODELS/DETECTOR_FINAL0751.mat');
 detector = detector.detector_1;
 
 % Load classification network 1 (damaged vs not damaged)
-trained_classifier_1 =load('/Users/eleanort/Library/CloudStorage/OneDrive-NanyangTechnologicalUniversity/PhD/UAV damage detection/GitHub/UAVdamageAssessment/FINAL_MODELS/CLASSIFIER_1_FINAL0809.mat');
+trained_classifier_1 =load('/UAVdamageAssessment/FINAL_MODELS/CLASSIFIER_1_FINAL0809.mat');
 trained_classifier_1 = trained_classifier_1.trained_net_1;
 
 % Load classification network 2 (moderate vs major damage)
-trained_classifier_2 = load('/Users/eleanort/Library/CloudStorage/OneDrive-NanyangTechnologicalUniversity/PhD/UAV damage detection/GitHub/UAVdamageAssessment/FINAL_MODELS/CLASSIFIER_2_FINAL0838.mat');
+trained_classifier_2 = load('/UAVdamageAssessment/FINAL_MODELS/CLASSIFIER_2_FINAL0838.mat');
 trained_classifier_2 = trained_classifier_2.trained_net_1;
 
 
 % load sieve network
-trained_sieve = load('/Users/eleanort/Library/CloudStorage/OneDrive-NanyangTechnologicalUniversity/PhD/UAV damage detection/GitHub/UAVdamageAssessment/FINAL_MODELS/SIEVE_FINAL0977.mat');
+trained_sieve = load('/UAVdamageAssessment/FINAL_MODELS/SIEVE_FINAL0977.mat');
 trained_sieve = trained_sieve.best_model_1;
 
 % Set box confidenc threshold for detections to be included. 
