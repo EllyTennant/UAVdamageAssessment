@@ -1,0 +1,1 @@
+Place trained models here for building localisation, sieve model, damage classification 1 (No damage-minor damage vs damaged), damage classification 2 (moderate damage vs major damage).
